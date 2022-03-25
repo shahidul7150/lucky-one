@@ -1,0 +1,25 @@
+btn-container{
+    display: flex;
+    justify-content: space-around;
+}
+.choose-btn{
+    background-color: transparent;
+    border: 2px solid green;
+    color: green;
+    padding: 10px;
+    cursor: pointer;
+
+}
+.again-btn{
+    background-color: transparent;
+    border: 2px solid #f70000;
+    color: red;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.cart-container p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
