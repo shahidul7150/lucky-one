@@ -1,0 +1,12 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 8fr 4fr; 
+    background-color: rgb(249, 248, 247);
+    height: 100vh;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 10px 20px;
+}
