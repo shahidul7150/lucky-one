@@ -10,3 +10,38 @@
     gap: 20px;
     padding: 10px 20px;
 }
+
+
+/* Responsive mobile*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .shop-container{
+        display: grid;
+        grid-template-columns: 1fr; 
+    }
+    .products-container{
+        display: grid;
+    grid-template-columns: repeat(1,1fr);
+    }
+    }
+    /*Responsive Tab  */
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        .shop-container{
+            display: grid;
+            grid-template-columns: 1fr; 
+        }
+        .products-container{
+            display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+    }
+    /* Response small screen */
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .shop-container{
+            display: grid;
+            grid-template-columns: 1fr; 
+        }
+        .products-container{
+            display: grid;
+        grid-template-columns: repeat(3,1fr);
+        }
+    }
