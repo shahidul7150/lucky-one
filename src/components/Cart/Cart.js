@@ -16,6 +16,9 @@ const Cart = ({ cart }) => {
         serCartItem(random)
         
     }
+    const removeall = (cart) => {
+        cart=[]
+    }
     return (
         <div className='cart-container'>
             <h1> Add to Cart</h1>
@@ -28,7 +31,7 @@ const Cart = ({ cart }) => {
                 
                 <input onClick={()=>chooseBtnHandler(cart)} className='choose-btn' type="button" value="Choose 1 from me" />
                 <br />
-                <input className='again-btn' type="button" value="Again Adding" />
+                <input onClick={()=>removeall(cart)} className='again-btn' type="button" value="Again Adding" />
            </div>
         </div>
     );

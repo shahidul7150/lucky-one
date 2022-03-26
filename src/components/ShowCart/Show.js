@@ -5,7 +5,7 @@ const Show = ({ item }) => {
     return (
         <div>
 
-            <h3>{item.name}</h3>
+            <h5>{item.name}</h5>
         </div>
     );
 };
