@@ -1,25 +1,26 @@
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {faTrash} from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Show from '../ShowCart/Show';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-    const [cartItem,serCartItem]=useState([])
+
+    const [cartItem, serCartItem] = useState([])
+    
     const chooseBtnHandler = (cart) => {
         console.log("ok hoice", cart); 
         const newItem = [...cartItem, cart]
        console.log(newItem);
-        const random=1+(Math.floor(Math.random()*parseInt(cart.length)))
+        const random=cart[Math.floor(Math.random()*parseInt(cart.length))]
         // console.log(random);
-        console.log(random);
-        serCartItem(newItem.indexOf(random))
+        console.log(random.name);
+        serCartItem(random)
         
     }
     return (
         <div className='cart-container'>
             <h1> Add to Cart</h1>
+            
+            <h2> {cartItem.name}</h2>
             {
                 cart.map(itemProduct=><Show key={itemProduct.id} item={itemProduct}></Show>)
             }

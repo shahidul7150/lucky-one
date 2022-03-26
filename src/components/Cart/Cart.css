@@ -2,7 +2,13 @@
     position: sticky;
     top: 0;
 }
-btn-container{
+.cart-container h2{
+    background-color: #15f700;
+}
+.cart-container span{
+    background-color: #f70000;
+}
+.btn-container{
     display: flex;
     justify-content: space-around;
 }
