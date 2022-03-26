@@ -10,7 +10,14 @@
     gap: 20px;
     padding: 10px 20px;
 }
-
+.questions-container{
+    text-align: center;
+    
+}
+.questions{
+    padding: 0 20px;
+    text-align: center;
+}
 
 /* Responsive mobile*/
 @media screen and (min-width: 320px) and (max-width: 480px){

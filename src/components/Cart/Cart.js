@@ -1,14 +1,16 @@
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import {faTrash} from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 import Show from '../ShowCart/Show';
 import './Cart.css'
 const Cart = ({cart}) => {
-    console.log(cart);
-    const { name } = cart
-    
-    const chooseBtnHandler = (itemProduct) => {
-        console.log("ok hoice",itemProduct);
+    console.log(cart>Math.random());
+    const [randomItem,SetRendomItem] = useState([]);
+
+    const chooseBtnHandler = (item) => {
+        console.log("ok hoice",item);    
+        
     }
     return (
         <div className='cart-container'>
