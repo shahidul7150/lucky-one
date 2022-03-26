@@ -2,5 +2,5 @@
 
 ### Deployment
 
-This section has moved here: [https://baby-education.netlify.app/](https://baby-education.netlify.app/)
+Website Live Link: [https://baby-education.netlify.app/](https://baby-education.netlify.app/)
 
