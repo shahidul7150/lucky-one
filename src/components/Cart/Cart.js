@@ -4,12 +4,17 @@
 import { useState } from 'react';
 import Show from '../ShowCart/Show';
 import './Cart.css'
-const Cart = ({cart}) => {
-    console.log(cart>Math.random());
-    const [randomItem,SetRendomItem] = useState([]);
 
-    const chooseBtnHandler = (item) => {
-        console.log("ok hoice",item);    
+const Cart = ({ cart }) => {
+    const [cartItem,serCartItem]=useState([])
+    const chooseBtnHandler = (cart) => {
+        console.log("ok hoice", cart); 
+        const newItem = [...cartItem, cart]
+       console.log(newItem);
+        const random=1+(Math.floor(Math.random()*parseInt(cart.length)))
+        // console.log(random);
+        console.log(random);
+        serCartItem(newItem.indexOf(random))
         
     }
     return (
@@ -20,7 +25,7 @@ const Cart = ({cart}) => {
             }
             <div className='btn-container' >
                 
-                <input onClick={()=>chooseBtnHandler()} className='choose-btn' type="button" value="Choose 1 from me" />
+                <input onClick={()=>chooseBtnHandler(cart)} className='choose-btn' type="button" value="Choose 1 from me" />
                 <br />
                 <input className='again-btn' type="button" value="Again Adding" />
            </div>

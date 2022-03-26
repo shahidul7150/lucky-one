@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Show = ({ item }) => {
-    console.log(item);
+    // console.log(item);
     return (
         <div>
 

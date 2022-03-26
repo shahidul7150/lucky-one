@@ -52,12 +52,12 @@ const Shop = () => {
                             <h1>Props vs State Difference</h1>
                             <hr />
                             <p> 
-                               => Props using for passing data <br/>
-                               => Props connected one component to another <br/>
+                               => Props using for passing data 
+                               => Props connected one component to another 
                                => Props looking like html attribute
-                                <hr />
-                                =>State change by user action <br />
-                                => State reprasent Local storage data <br />
+                                
+                                =>State change by user action 
+                                => State reprasent Local storage data 
                                 =>State is mutable
 
                             </p>
